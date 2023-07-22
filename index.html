@@ -12,6 +12,20 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+      <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+             'bike-btn-color': '#E76F51',
+          }
+        }
+      }
+    }
+  </script>
+   
   </head>
   <body>
     <!-- Header section stat here -->
@@ -59,7 +73,7 @@
           </ul>
         </div>
         <div class="">
-          <a class="btn">Button</a>
+          <a class="btn bg-bike-btn-color text-cyan-50">Login</a>
         </div>
       </div>
       <!-- Navbar section end -->
@@ -452,9 +466,9 @@
     <!-- Footer section start from here -->
     <footer class="bg-slate-400 h-3/4">
       <div class="flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto">
-          <div>
+          <div class="my-10">
 
-            <div class="flex justify-center lg:justify-normal items-center  gap-7">
+            <div class="flex justify-center lg:justify-normal items-center  gap-7 my-10">
                <h2>Download Now</h2>
                <h2>license</h2>
             </div>
@@ -470,7 +484,7 @@
              
           </div>
           <div>
-              <h1 class="text-2xl text-center lg:text-start">Get the App</h1>
+              <h1 class="text-2xl text-center lg:text-start mb-10">Get the App</h1>
               <img class="w-17" src="./images/others/android.png" alt="">
               <img class="w-15" src="./images/others/ios.png" alt="">
           </div>
